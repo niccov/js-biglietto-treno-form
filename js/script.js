@@ -13,25 +13,29 @@ let età = document.getElementById("userAge");
 let km = document.getElementById("userKm");
 let button = document.getElementById("userAgeButton");
 
-let pricePerKm = 0.21
+let pricePerKm = 0.21;
 
-let baseTicketPrice = km.value * pricePerKm
+let baseTicketPrice;
 
-let prezzoFinale
+let prezzoFinaleMinorenni;
 
 userAgeButton.addEventListener("click", function () {
 
+    baseTicketPrice = km.value * pricePerKm;
+
     if(età.value < 18) {
 
-        console.log()
+        prezzoFinaleMinorenni = baseTicketPrice - (baseTicketPrice / 100 * 20);
+        console.log(prezzoFinaleMinorenni);
 
     } else if(età.value >= 65) {
 
-        console.log()
+        prezzoFinaleAnziani = baseTicketPrice - (baseTicketPrice / 100 * 40);
+        console.log(prezzoFinaleAnziani);
 
     } else {
 
-        console.log()
+        console.log(baseTicketPrice);
 
     }
 })
