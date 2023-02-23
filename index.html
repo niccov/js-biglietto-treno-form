@@ -9,17 +9,70 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <div>
-          <label for="userAge">Quanti anni hai?</label>
-          <input id="userAge" type="number">
-    
-          <label for="userKm">Quanti chilometri devi percorrere?</label>
-          <input id="userKm" type="number">
+    <div class="section">
+        <div class="titol">CALCOLA IL PREZZO DEL TUO BIGLIETTO</div>
+        <div class="container-genera-biglietto">
+            <div class="campi-dati">
+                <div class="box-dati">
+                  <label for="">Nome Cognome</label>
+                  <input type="text">
+                </div>  
 
-          <button id="userAgeButton">Esegui</button>
+                <div class="box-dati">
+                  <label for="userAge">Quanti anni hai?</label>
+                  <input id="userAge" type="number">
+                </div>  
+
+                <div class="box-dati">
+                  <label for="userKm">Quanti chilometri devi percorrere?</label>
+                  <input id="userKm" type="number">
+                </div>  
+            </div>
+
+            <div class="container-buttons">
+                <button id="userAgeButton">Esegui</button>
+                <button>Annulla</button>
+            </div>
         </div>
     </div>
+
+    <div class="section">
+        <div class="titol">IL TUO BIGLIETTO</div>
+        <div class="container-dati-biglietto">
+            <div class="titol-passeggeri">DETTAGLI PASSEGGERI</div>
+            <div class="container-dettagli">
+                 <div class="dettagli-left">
+                    <div>NOME PASSEGGERO</div>
+                    <div>Jon Snow</div>
+                 </div>
+
+                 <div class="dettagli-right">
+                    <div class="card">
+                        <div>Offerta</div>
+                        <div>Biglietto Stantard</div>
+                    </div>
+
+                    <div class="card">
+                        <div>Carrozza</div>
+                        <div>5</div>
+                    </div>
+                    
+                    <div class="card">
+                        <div>Codice CP</div>
+                        <div>92911</div>
+                    </div>
+
+                    <div class="card">
+                        <div>Costo biglietto</div>
+                        <div id="prezzo-biglietto"></div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
 <!-- script -->
 <script type="text/javascript" src="js/script.js"></script>
 </body>

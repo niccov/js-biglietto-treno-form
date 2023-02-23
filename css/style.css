@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: red;
+}
+
+.titol{
+    color: white;
+    font-family: fantasy;
+    font-size: 35px;
+    text-align: center;
+}
+
+.container-genera-biglietto{
+    width: 75%;
+
+    margin: auto;
+
+    /* test */
+    border: 1px solid black;
+}
+
+.campi-dati{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-dati{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.container-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    margin: 15px 0px 15px 0px;
+}
+
+.container-dati-biglietto{
+    width: 75%;
+
+    margin: auto;
+
+    /* test */
+    border: 1px solid black;
+}
+
+.container-dettagli{
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+
+    border: 1PX solid black;
+
+    /* test */
+
+    height: 100px;
+}
+
+.titol-passeggeri{
+    margin-left: 50px;
+}
+
+.dettagli-left{
+    width: 20%;
+}
+
+.dettagli-right{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
